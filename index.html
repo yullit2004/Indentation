@@ -11,7 +11,7 @@
     <div class="container article__container">
       <h1 class="article__main-title">Отступы в вёрстке: margin и padding</h1>
 
-      <p class="artcle__text text">В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения смысла и хорошей читаемости вашего кода. 
+      <p class="article__text text">В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения смысла и хорошей читаемости вашего кода. 
         Если точнее — речь пойдет об основных правилах организации отступов. Они сильно влияют на общую функциональность кода и, 
         если всё сделано верно, позволяют легко вносить изменения в любую его часть. При этом другие части кода продолжат нормально работать.
       </p>
@@ -20,23 +20,23 @@
         но также будут полезным напоминанием и для более опытных верстальщиков. Итак, поговорим о фундаментальных основах работы с отступами в вёрстке.
       </p>
     </div>
-        
-    <nav class="navigation">
-      <div class="container navigation__container" >
+    
+    <div class="container navigation__container wrapper">
+      <nav class="navigation">
         <h2 class="navigation__title">Содержание:</h2>
-        <ol class="navigation__list">
+        <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#indent-margin" class="navigation__link">Отступ задается от предыдущего элемента к следующему</a>
+            <a href="#indent-margin" class="navigation__link">1. Отступ задается от предыдущего элемента к следующему</a>
           </li>
           <li class="navigation__item">
-            <a href="#indent-dom" class="navigation__link">Отступ задается последнему возможному элементу в DOM-дереве</a>
+            <a href="#indent-dom" class="navigation__link">2. Отступ задается последнему возможному элементу в DOM-дереве</a>
           </li>
           <li class="navigation__item">
-            <a href="#indent" class="navigation__link">Для последнего элемента группы отступ обнуляется</a>
+            <a href="#indent" class="navigation__link">3. Для последнего элемента группы отступ обнуляется</a>
           </li>
-        </ol>
-      </div>
-    </nav>
+        </ul>
+      </nav>
+    </div>
 
     <section class="indent-margin container">
       <h2 class="indent-margin__title" id="indent-margin">Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.</h2>
@@ -106,7 +106,7 @@
       </section>
 
       <section class="total">
-        <div class="container total__container">
+        <div class="container total__container wrapper">
           <h2 class="total__title">Подытожим:</h2>
           <ul class="total__list">
             <li class="total__item">- отступы задаём от предыдущего элемента к следующему</li>
