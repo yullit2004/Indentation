@@ -7,6 +7,7 @@
   padding-top: 25px;
   padding-left: 39.5px;
   padding-bottom: 25px;
+  padding-right: 25px;
 }
 
 .navigation__container {
@@ -16,7 +17,7 @@
 }
 
 .article__container {
-  padding-bottom: 25px;
+  margin-bottom: 50px;
 }
 
 .indent-margin, .indent-dom, .indent, .total {
@@ -30,6 +31,15 @@
   font-weight: 900;
   line-height: 120%;
   margin-bottom: 30px;
+}
+
+  .indent-margin__text_bold {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.indent-margin__text-bold, .indent-margin__text-italic, .indent-margin__text-italic, .indent-dom__text-italic, .indent__text-italic {
+  font-style: italic;
 }
 
 .image {
@@ -112,17 +122,12 @@
   margin-bottom: 10px;
 }
 
-.total__text {
-  width: 1080px;
-}
-
 .total__item:last-child {
   margin-bottom: 0;
 }
 
 span {
-  text-transform: uppercase;
-  font-weight: 700;
+  
 }
 
 .indent-dom__image, .indent__image {

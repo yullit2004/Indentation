@@ -47,16 +47,16 @@
           </div>
             
           <div class="indent-margin__text-right">
-            <p class="indent-margin__text"><span>ВАЖНО:</span> <i>margin</i> всегда задают от предыдущего элемента к следующему.</p>
-            <p class="indent-margin__text">Свойство <i>margin</i> необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется <i>margin-right</i> и <i>margin-bottom.</i></p>
-            <p class="indent-margin__text">(!) Свойства <i>margin-left</i> и <i>margin-top</i> используются крайне редко.</p>
-            <p class="indent-margin__text">Для <i>padding</i> верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.</p>
+            <p class="indent-margin__text"><span class="indent-margin__text-bold">ВАЖНО:</span> <span class="indent-margin__text-italic">margin</span> всегда задают от предыдущего элемента к следующему.</p>
+            <p class="indent-margin__text">Свойство <span class="indent-margin__text-italic">margin</span> необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется <span class="indent-margin__text-italic">margin-right</span> и <span class="indent-margin__text-italic">margin-bottom.</span></p>
+            <p class="indent-margin__text">(!) Свойства <span class="indent-margin__text-italic">margin-left</span> и <span class="indent-margin__text-italic">margin-top</span> используются крайне редко.</p>
+            <p class="indent-margin__text">Для <span class="indent-margin__text-italic">padding</span> верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.</p>
           </div>
         </div>
 
         <div class="indent-margin__container-second">
           <div class="indent-margin__text-left">
-            <p class="indent-margin__text">Отступ внутри блока сверху или слева реализуется через <i>padding-top</i> и <i>padding-left</i> родителя.</p>
+            <p class="indent-margin__text">Отступ внутри блока сверху или слева реализуется через <span class="indent-margin__text-italic">padding-top</span> и <span class="indent-margin__text-italic">padding-left</span> родителя.</p>
             <p class="indent-margin__text">Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.</p>
             <p class="indent-margin__text">Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.</p>
           </div>
@@ -77,10 +77,10 @@
         <img class="indent-dom__image image" src="img/4.jpg" alt="изображение с текстом рецепта бутерброда" height="450" width="600">
         <p class="indent-dom__text text">Отступ делают за счёт соседних элементов, а не дочерних:</p>
         <img class="indent-dom__image image" src="img/5.jpg" alt="скриншот экрана, слева изображение с рецептом бутерброда, а справа фрагмент кода" height="506" width="1080">
-        <p class="indent-dom__text text">Казалось бы, можно задать отступ параграфу <i>&lt;p&gt;</i>, либо обёртке <i>&lt;article&gt;</i> для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.</p>
+        <p class="indent-dom__text text">Казалось бы, можно задать отступ параграфу <span class="indent-dom__text-italic">&lt;p&gt;</span>, либо обёртке <span class="indent-dom__text-italic">&lt;article&gt;</span> для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.</p>
         <p class="indent-dom__text text">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</p>
         <img class="indent-dom__image image" src="img/6.jpg" alt="фрагмент кода" height="164" width="964">
-        <p class="indent-dom__text text">В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <i>section</i>. Именно для него задается <i>padding-top</i>, а не <i>div</i> с классом <i>container</i>. Свойства margin, которые стоят по умолчанию необходимо обнулить.</p>
+        <p class="indent-dom__text text">В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <span class="indent-dom__text-italic">section</span>. Именно для него задается <span class="indent-dom__text-italic">padding-top</span>, а не <span class="indent-dom__text-italic">div</span> с классом <span class="indent-dom__text-italic">container</span>. Свойства margin, которые стоят по умолчанию необходимо обнулить.</p>
         <img class="indent-dom__image image" src="img/7.jpg" alt="скриншот экрана, слева изображение с отступом сверху, а слева фрагмент кода">
         <p class="indent-dom__text text">Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.</p>
       </div>
@@ -92,7 +92,7 @@
           <p class="indent__text text">Для наглядности возьмём наш предыдущий пример с рецептами</p>
           <p class="indent__text text">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.</p>
           <img class="indent__image image" src="img/8.jpg" alt="фрагмент текста с рецептами" height="600" width="600">
-          <p class="indent__text text">В соответствии со вторым принципом: последний <i>margin</i> обнуляется, а нижний отступ задаётся через padding для <i>section</i>. Я чаще всего задаю <i>padding</i> для секции с обоих сторон, если расстояние между секциями 100px задаю секциям <i>padding-top:50px</i> и <i>padding-bottom:50px.</i></p>
+          <p class="indent__text text">В соответствии со вторым принципом: последний <span class="indent__text-italic">margin</span> обнуляется, а нижний отступ задаётся через padding для <span class="indent__text-italic">section</span>. Я чаще всего задаю <span class="indent__text-italic">padding</span> для секции с обоих сторон, если расстояние между секциями 100px задаю секциям <span class="indent__text-italic">padding-top:50px</span> и <span class="indent__text-italic">padding-bottom:50px.</span></p>
           <img class="indent__image image" src="img/9.jpg" alt="скриншот текста с рецептом, на нем показывают отступы" height="607" width="600">
           <img class="indent__image image" src="img/10.jpg" alt="скриншот кода"  height="1058" width="1080">
           <p class="indent__text text">Для большего понимания рассмотрим другой пример, который часто встречается на практике:</p>
